@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Biodata</title>
+	<style>
+		.header{
+			color: red;
+			height: 40px;
+			padding: 10px;
+			font-family: Verdana;
+			font-size: 20px;
+		}
+
+		fieldset { 
+			padding: 9px; 
+			margin-bottom:20px; 
+			border: 1px solid #ddd; 
+			width: 500px; 
+		}
+
+		form.hform { 
+			margin-bottom: 10px; 
+		}
+		form.hform label { 
+			float: left; 
+			width: 180px; 
+		}
+		form.hform p {
+			display: inline; 
+			white-space: nowrap;
+		}
+
+		body{
+			background-image: url("bg.JPG");
+		}
+
+		#daftar-box{
+			position: relative;
+			background-color: rgb(119, 240, 224);
+			padding: 10px;
+			margin: 5% auto;
+			height: 400px;
+			width: 600px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header" align="center">
+		<h1>Formulir Data Diri</h1>
+	</div>
+	<div id="daftar-box">
+	<form method="GET" action="method_get.php" class="hform">
+	<fieldset><legend><b>Data Diri</b></legend>
+		<table>
+			<tr>
+				<td>Nama Lengkap:</td>
+				<td><input type="text" name="nama"></td>
+			</tr>
+			<tr>
+				<td>Tempat Lahir:</td>
+				<td><input type="text" name="tempat"></td>
+			</tr>
+			<tr>
+				<td>Tanggal lahir:</td>
+				<td><input type="datetime" name="tanggal"></td>
+			</tr>
+			<tr>
+				<td>Agama:</td>
+				<td><input type="text" name="agama"></td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin:</td>
+				<td><input type="radio" name="jk" value ="Laki Laki">Laki Laki
+					<input type="radio" name="jk" value ="Perempuan">Perempuan</td>
+			</tr>
+			<tr>
+				<td>Pekerjaan:</td>
+				<td><input type="text" name="pekerjaan"></td>
+			</tr>
+			<tr>
+				<td>Asal Perguruan Tinggi:</td>
+				<td><input type="text" name="pt"></td>
+			</tr>
+			<tr>
+				<td>Alamat Email:</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td>No Telepon:</td>
+				<td><input type="tel" name="telephone"></td>
+			</tr>
+			<tr>
+				<td>Sosial Media(Instagram):</td>
+				<td><input type="text" name="sosmed"></td>
+			</tr>
+			<tr>
+				<td>Alamat:</td>
+				<td><textarea name="alamat" placeholder="Tuliskan alamat lengkap" cols="40" rows="5"></textarea></td>
+			</tr>
+			
+		</table>
+	</fieldset>
+	
+<br>
+
+	<p style="color: #000000;"><b>APAKAH DATA YANG DIBERIKAN SUDAH SESUAI?:</b></p>
+	<input type="radio" name="data"><b>SUDAH</b>
+	<input type="submit" value="Submit">
+</form>
+
+</div>	
+<br><br>
+<footer>
+	<p align="center">Copyright &copy;2021</p>
+</footer>
+
+	</body>
+</html>
